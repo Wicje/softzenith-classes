@@ -1,55 +1,45 @@
-//Variable 
-const studioName = 'Brightlabs';
-let totalProjectCount = 0;
+//for our tracker
+// ==========================================
+// 1. VARIABLES & STRINGS
+// ==========================================
+const studioName = "Overhorizon Studios";
+let totalProjectCount = 0; 
 
-//moving forward with backtick
-let myContent = `sharp with a dynamic edge 
-                  djdakkkkdaklkldalkl
-                  nadkajdlkldsklkl
-                  jdkjkjskjkkjkjsfkj`;
+// ==========================================
+// 2. CLASSES & OBJECTS
+// ==========================================
+// A Blueprint for creating "Media Project" objects
+class MediaProject {
+  constructor(id, title, type, status) {
+    this.id = id;
+    this.title = title;
+    this.type = type; // e.g., "Film", "Photography", "Branding", "Photoshoot"
+    this.status = status; // e.g., "In Progress", "Completed", "not started"
+  }
+
+  //A method update our class
+  updateStatus(newstatue) {
+this.status = newsStatue;
+  }
+
+  //Array 
+  const projectList = [
+new mediaProject{1, "X-men:Days of Future past", "In Progress"},
+    new mediaProject{2, "Jumanji", "Completed"},
+  ];
+
+//update our array property(.length)
+  totalProjectCount = projectList.length;
 
 
-console.log(myContent);
+  //Functions
+  function addNewProject (title, type, status = "Not Started"){
+//increasing project variable 
+    totalProjectCount++;
+    const newId = totalProjectCount;
 
+    //create a new instance(object)
+    const project = new mediaProject(newId, title, type, status);
 
-//move with string literals
-const app = "my doodle art is amazing";
-
-console.log(app);
-
-
-//datatypes
-let x = 5;
-let y = "fruit";
-
-console.log(x);
-console.log(y);
-
-//arrays
-const fruits = ["banana","gauva"];
-console.log(fruits);
-
-
-//objects
-const car = {
-brand: "tesla",
-  color: "blue",
-  name:"c6",
-  speed: "340mph",
-};
-
-console.log(car);
-
-//classes
-class Car {
-constructor(brand, color, name, year) {
-this.name= name;
-  this.brand = brand;
-  this.color = color;
-  this.year = year;
-}
-}
-
-const car1 = new Car("Toyota", "Corolla", "lexus", 2022);
-
-console.log(car1);
+    projectList.push////where we stopped
+  }
